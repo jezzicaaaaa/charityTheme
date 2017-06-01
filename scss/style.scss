@@ -1,0 +1,68 @@
+@import 'partials/setup';
+@import 'partials/variables';
+
+.home{
+    @include background;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15) ), url(../assets/background.jpg);
+    height: 120vh;
+    overflow: hidden;
+    color: #fff;
+
+    .nav{
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .left-nav{    
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                display: inline-block;
+            }
+            .logo-title{
+                width: 50%;
+                display: inline-block;
+                
+                h2{
+                    font-family: $robotoSlab;
+                    font-size: 28px;
+                    margin-top: 5px;
+                    
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 15px;
+                    margin-bottom: 0;
+
+                }
+                
+            }
+        }
+        .right-nav{
+            display: inline;
+            width: 60%;
+            margin: auto;
+            margin-right: 15px;
+
+            ul{
+                display: inline-block;
+                list-style: none;
+                text-align: center;
+                font-family: $openSans;
+
+                li{
+                    display: inline;
+                    padding: 10px;
+                    margin: 6px;
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                }
+                li:nth-child(1){
+                    
+                }
+            }
+        }
+    }
+}
