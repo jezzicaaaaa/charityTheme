@@ -1,5 +1,6 @@
 @import 'partials/setup';
 @import 'partials/variables';
+@import 'partials/global';
 
 .home{
     @include background;
@@ -8,48 +9,44 @@
     overflow: hidden;
     color: #fff;
 
-    .nav{
-        margin: 50px 0;
+    nav{
         display: flex;
-        justify-content: space-between;
+        margin: 50px 0;
 
         .left-nav{    
-            width: 20%;
             display: flex;
+            width: 18%;
             justify-content: space-between;
 
             img{
                 display: inline-block;
+                width: auto;
+
             }
             .logo-title{
-                width: 50%;
                 display: inline-block;
+                text-align: center;
                 
                 h2{
                     font-family: $robotoSlab;
-                    font-size: 28px;
-                    margin-top: 5px;
+                    font-size: 25px;
                     
                 }
                 h5{
                     font-weight: 400;
                     font-size: 15px;
                     margin-bottom: 0;
-
                 }
-                
             }
         }
         .right-nav{
-            display: inline;
             width: 60%;
-            margin: auto;
-            margin-right: 15px;
+            display: flex;
+            justify-content: flex-end;
 
             ul{
                 display: inline-block;
                 list-style: none;
-                text-align: center;
                 font-family: $openSans;
 
                 li{
@@ -59,24 +56,98 @@
                     font-weight: 600;
                     font-style: normal;
                     font-size: 16px;
-                    transition: .3s ease-in-out;
                 }
                 li:nth-child(1){
                     color: $peach;
                 }
                 li:hover{
-                    cursor: pointer;
+                    @extend .hover;
                     color: $peach;
                 }
             }
-        }
-        .homeText{
-            margin-top: 100px;
+        } 
+    }
+    .home-text{
+        margin-top: 20vh;
+        width: 65%;
 
-            h3{
+        h3{
+            @include yellow-phrases;
+        }
+        h1{
+            @extend .capitalized;
+            font-size: 60px;
+        }
+        p{
+            font-family: $openSans;
+            margin-top: 15px;
+            font-size: 25px;
+            font-weight: 200;
+            line-height: 40px;
+            margin-bottom: 50px;
+        }
+        button{
+            @include button;
+
+        }
+    }
+}
+.about {
+    padding: 100px 0;
+
+    .left-about{
+        display: inline-block;
+        margin: 0 5%;
+        width: 45%;
+        h1{
+            @include section-title;
+            
+        }
+        p{
+            @extend .descriptions;
+            margin-bottom: 15px;
+
+            i{
                 color: $yellow;
-                text-transform: uppercase;
+                margin-right: 20px;
             }
+        }
+        .list p:hover{
+            @extend .hover;
+            color: $yellow;
+        }
+        .first-par{
+            margin-bottom: 25px;
+        }
+    }
+    .right-about{
+        width:42%;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+
+        img{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+.cause{
+    background-color: $bgColor;
+    .cause-title{
+        text-align: center;
+        h3{
+            @include yellow-phrases;
+            padding-top: 15vh;
+            margin-bottom: 10px;
+        }
+        h1{
+            @include section-title;
+            width: 50%;
+            margin: auto;
+
         }
     }
 }

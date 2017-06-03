@@ -1,0 +1,43 @@
+@mixin background {
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin button{
+    border-radius: 28px;
+    background-color: $peach;
+    color: #fff;
+    text-transform: $up;       
+    border: none;
+    font-family: $openSans;
+    padding: 20px 35px;
+    font-size: 16px;    
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+@mixin yellow-phrases{
+    color: $yellow;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: $openSans;
+}
+@mixin section-title {
+    font-family: $robotoSlab;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $titleColor;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+$openSans: 'Open Sans', sans-serif;
+$robotoSlab: 'Roboto Slab', serif;
+$peach: #daa769;
+$yellow: #ebc33a;
+$up: uppercase;
+$titleColor: #534d51;
+$desColor: #96948f;    
+$bgColor: #f7f6ef;

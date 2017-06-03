@@ -10,6 +10,23 @@ body {
   padding: auto;
   max-width: 1150px; }
 
+.descriptions, .about .left-about p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  color: #96948f; }
+
+.capitalized, .home .home-text h1 {
+  font-family: "Roboto Slab", serif;
+  text-transform: capitalize; }
+
+.hover, .home nav .right-nav ul li:hover, .about .left-about .list p:hover {
+  cursor: pointer;
+  transition: .3s ease-in-out; }
+
 .home {
   background-attachment: fixed;
   background-position: top;
@@ -19,52 +36,130 @@ body {
   height: 100vh;
   overflow: hidden;
   color: #fff; }
-  .home .nav {
-    margin: 50px 0;
+  .home nav {
     display: flex;
-    justify-content: space-between; }
-    .home .nav .left-nav {
-      width: 20%;
+    margin: 50px 0; }
+    .home nav .left-nav {
       display: flex;
+      width: 18%;
       justify-content: space-between; }
-      .home .nav .left-nav img {
-        display: inline-block; }
-      .home .nav .left-nav .logo-title {
-        width: 50%;
-        display: inline-block; }
-        .home .nav .left-nav .logo-title h2 {
+      .home nav .left-nav img {
+        display: inline-block;
+        width: auto; }
+      .home nav .left-nav .logo-title {
+        display: inline-block;
+        text-align: center; }
+        .home nav .left-nav .logo-title h2 {
           font-family: "Roboto Slab", serif;
-          font-size: 28px;
-          margin-top: 5px; }
-        .home .nav .left-nav .logo-title h5 {
+          font-size: 25px; }
+        .home nav .left-nav .logo-title h5 {
           font-weight: 400;
           font-size: 15px;
           margin-bottom: 0; }
-    .home .nav .right-nav {
-      display: inline;
+    .home nav .right-nav {
       width: 60%;
-      margin: auto;
-      margin-right: 15px; }
-      .home .nav .right-nav ul {
+      display: flex;
+      justify-content: flex-end; }
+      .home nav .right-nav ul {
         display: inline-block;
         list-style: none;
-        text-align: center;
         font-family: "Open Sans", sans-serif; }
-        .home .nav .right-nav ul li {
+        .home nav .right-nav ul li {
           display: inline;
           padding: 10px;
           margin: 6px;
           font-weight: 600;
           font-style: normal;
-          font-size: 16px;
-          transition: .3s ease-in-out; }
-        .home .nav .right-nav ul li:nth-child(1) {
+          font-size: 16px; }
+        .home nav .right-nav ul li:nth-child(1) {
           color: #daa769; }
-        .home .nav .right-nav ul li:hover {
-          cursor: pointer;
+        .home nav .right-nav ul li:hover {
           color: #daa769; }
-    .home .nav .homeText {
-      margin-top: 100px; }
-      .home .nav .homeText h3 {
+  .home .home-text {
+    margin-top: 20vh;
+    width: 65%; }
+    .home .home-text h3 {
+      color: #ebc33a;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      font-family: "Open Sans", sans-serif; }
+    .home .home-text h1 {
+      font-size: 60px; }
+    .home .home-text p {
+      font-family: "Open Sans", sans-serif;
+      margin-top: 15px;
+      font-size: 25px;
+      font-weight: 200;
+      line-height: 40px;
+      margin-bottom: 50px; }
+    .home .home-text button {
+      border-radius: 28px;
+      background-color: #daa769;
+      color: #fff;
+      text-transform: uppercase;
+      border: none;
+      font-family: "Open Sans", sans-serif;
+      padding: 20px 35px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.8px; }
+
+.about {
+  padding: 100px 0; }
+  .about .left-about {
+    display: inline-block;
+    margin: 0 5%;
+    width: 45%; }
+    .about .left-about h1 {
+      font-family: "Roboto Slab", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #534d51;
+      text-transform: capitalize;
+      margin: 20px 0; }
+    .about .left-about p {
+      margin-bottom: 15px; }
+      .about .left-about p i {
         color: #ebc33a;
-        text-transform: uppercase; }
+        margin-right: 20px; }
+    .about .left-about .list p:hover {
+      color: #ebc33a; }
+    .about .left-about .first-par {
+      margin-bottom: 25px; }
+  .about .right-about {
+    width: 42%;
+    display: inline-block;
+    text-align: center;
+    margin: auto; }
+    .about .right-about img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      text-align: center; }
+
+.cause {
+  background-color: #f7f6ef; }
+  .cause .cause-title {
+    text-align: center; }
+    .cause .cause-title h3 {
+      color: #ebc33a;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      font-family: "Open Sans", sans-serif;
+      padding-top: 15vh;
+      margin-bottom: 10px; }
+    .cause .cause-title h1 {
+      font-family: "Roboto Slab", serif;
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #534d51;
+      text-transform: capitalize;
+      margin: 20px 0;
+      width: 50%;
+      margin: auto; }
