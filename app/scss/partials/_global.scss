@@ -1,19 +1,85 @@
-.descriptions {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-style: normal;
+.custom-text1{
     font-family: $openSans;
-    color: $desColor;
+    font-size: 16px;
+
+    @media #{$desktop} {
+        font-size: 14px;
+    }
+
+}
+.custom-text2{
+    font-family: $robotoSlab;
+    font-size: 25px;
+    
+    @media #{$desktop} {
+        font-size: 20px;
+    }
+}
+.custom-text3{
+    font-family: $openSans;
+    font-size: 25px;
+    font-weight: 200;
+
+    @media #{$desktop} {
+        font-size: 20px;
+    }
+}
+.custom-text4{
+    font-family: $robotoSlab;
+    font-size: 23px;
+    color: $titleColor;
+
+    @media #{$desktop} {
+        font-size: 18px;
+    }
 }
 
-.capitalized{
+.custom-text5{
     font-family: $robotoSlab;
-    text-transform: capitalize;
+    font-size: 58px;
+    font-weight: 700;
+    @media #{$desktop} {
+        font-size: 35px;
+    }
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.descriptions {
+    @extend .custom-text1;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    color: $desColor;
 }
 
 .hover{
     cursor: pointer;
     transition: .3s ease-in-out;
+}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.img-auto{
+    height: auto;
+    width: auto;
+}
+
+.sec-padding{
+    padding: 100px 0;
+
+    @media #{$desktop} {
+        padding: 50px 0;
+    }
+    
 }

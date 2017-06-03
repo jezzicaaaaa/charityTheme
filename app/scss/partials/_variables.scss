@@ -1,38 +1,43 @@
 @mixin background {
     background-attachment: fixed;
-    background-position: top;
-    background-size: cover;
+    background-position: left;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 @mixin button{
+    @extend .custom-text1;
     border-radius: 28px;
     background-color: $peach;
     color: #fff;
-    text-transform: $up;       
+    text-transform: uppercase;   
     border: none;
-    font-family: $openSans;
-    padding: 20px 35px;
-    font-size: 16px;    
+    padding: 20px 35px;   
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    
+    @media #{$desktop} {
+        padding: 15px 25px;
+    }
+}
+@mixin yellow-phrases{
+    @extend .custom-text1;
+    color: $yellow;
+    text-transform: $up;
     font-weight: 700;
     letter-spacing: 0.8px;
 }
-@mixin yellow-phrases{
-    color: $yellow;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    font-family: $openSans;
-}
 @mixin section-title {
-    font-family: $robotoSlab;
+    @extend .custom-text4;
+    text-transform: capitalize;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 400;
-    color: $titleColor;
-    text-transform: capitalize;
-    margin: 20px 0;
+
+    @media #{$desktop} {
+        font-size: 25px;
+    }
 }
+
 $openSans: 'Open Sans', sans-serif;
 $robotoSlab: 'Roboto Slab', serif;
 $peach: #daa769;
@@ -41,3 +46,12 @@ $up: uppercase;
 $titleColor: #534d51;
 $desColor: #96948f;    
 $bgColor: #f7f6ef;
+$orange: #f48c27;
+
+//media queries
+$default-width: 980px;
+$large-display: 1170px;
+
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(max-width: 1024px)";
+$default: "(max-width: 767px)";
