@@ -1,14 +1,11 @@
 var gulp = require('gulp');
-
 var sass = require('gulp-sass');
-
-var browserSync = require('browser-sync').create();
-
-gulp.task('hello', function(){
-    console.log('Hi Jezz!');
-});
-
+var browserSync = require('browser-sync');
+var reload = browserSync.create();
 //gets the source and passes it to it's destination
+
+
+
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
@@ -18,20 +15,21 @@ gulp.task('sass', function(){
     }))
 });
 
-gulp.task('browserSync', fucntion(){
+
+gulp.task('browserSync', () => {
     browserSync.init({
-        server: {
-            baseDir: 'app'
-        },
-    })
+        server:'app'
+    });
 });
 
 //gulp watch syntax
 gulp.task('watch', function(){
-    
     ('app/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('watch', ['browserSync'], function(){
     gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('index.html').reload;
 });
+
+gulp.task('default', ['sass', 'watch']);
