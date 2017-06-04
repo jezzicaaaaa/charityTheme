@@ -130,13 +130,11 @@
             @include section-title;
         }
     }
-    .three-article{
-        @extend .flex-row;
+    .container{
         margin: 70px 0;
     }
 
     .column{
-        @extend .flex-column;
         justify-content: space-between;
         width: 32%;
         background-color: #fff;
@@ -182,8 +180,7 @@
         color: $desColor;
         font-size: 23px;
     }
-    .three-logo{
-        @extend .flex-row;
+    .container{
         margin: 50px 0;
     }
     .logo-wrap{
@@ -217,8 +214,7 @@
         @include section-title;
         color: #fff;
     }
-    .four-row{
-        @extend .flex-row;
+    .container{
         padding: 60px;
 
         h5{
@@ -231,10 +227,137 @@
         }   
     }
 }
+.meet{
+    @extend .sec-padding;
+    text-align: center;
+
+    h1{
+        @include section-title;
+    }
+    p{
+        @extend .custom-text3;
+        color: $desColor;
+    }
+    .container{
+        margin: 40px 0;
+        img{
+            @extend .img;
+            margin: 10px 0;
+        }
+        h3{
+            @extend .custom-text4;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+ }
+ .join{
+     @include background;
+     background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/trash.jpg);
+     padding: 50px 0;
+     color: #fff;
+     text-align: center;
+
+    h2{
+         @include section-title;
+         
+         color: #fff;
+     }
+    p{
+         @extend .custom-text3;
+     }
+     button{
+        padding: 1.5% 5%;
+        margin: 40px 0;
+     }
+ }
+.news{
+    @extend .sec-padding;
+    background-color: $bgColor;
+
+    h3{
+        @include yellow-phrases;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        @include section-title;
+    }
+    .container{
+        margin: 70px 0;
+    }
+
+    .column{
+        justify-content: space-between;
+        width: 32%;
+        background-color: #fff;
+    
+        img{
+            @extend .img;
+        }
+    }
+    .article-desc{
+        @extend .flex-column;               
+        padding: 15px 25px;
+        text-align: left;
+
+        h3{
+            @extend .custom-text4;
+            text-transform: capitalize;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        p{
+            @extend .descriptions;
+        }
+    }
+}
+.gallery{
+    @extend .sec-padding;
+    text-align: center;
+    h3{
+        @include yellow-phrases;
+    }
+    h1{
+        @include section-title;
+    }
+    .container{
+        flex-wrap: wrap;
+        margin: 10px;
+
+        img{
+            display: inline-block;
+            @extend .img;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media #{$desktop}{
 .home{
     padding: 0;
+   .right-nav{
+       width: 80%;
+       justify-content: space-between;
+
+       ul{
+            justify-content: flex-start;
+       }
+
+   } 
 
     .home-text{
         margin: 30px 0;
@@ -250,7 +373,7 @@
 }
 .cause{
 
-    .three-article{
+    .container{
         margin: 30px 0;
     }
     
@@ -261,8 +384,126 @@
     }
 }
 .facts{
-    .four-row{
+    .container{
         padding: 30px;
+    }
+}
+.meet{
+    .volunteer{
+        margin-right: 15px;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+.join{
+    padding: 20px;
+}
+}
+
+
+@media #{$default}{
+.home{
+    .left-nav{
+        width: 30%;
+    }
+    .right-nav{
+        display: none;
+    }
+}
+.about{
+    .left-about{
+        width: 60%;
+    }
+    .right-about{
+        width: 
+        38%;
+    }
+}
+.cause{
+    .container{
+        margin: 20px auto;
+        flex-direction: column;
+    }
+    .column{
+        width: 90%;
+        margin: auto auto 20px auto;
+    }
+}
+.vision{
+    h1{
+        margin: 0 3%;
+    }
+    p{
+        margin: 0 3%;
+    }
+    .container{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .logo-wrap{
+        text-align: center;
+        width: 70%;
+        margin: 10px auto;
+
+        img{
+            margin: auto;
+        }
+    }   
+}
+.facts{
+    padding: 20px;
+    .four-row{
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+    .row-container{
+        width: 40%;
+        margin: 10px;
+    }
+}
+.meet{
+    .container{
+        flex-wrap: wrap;
+    }
+    .volunteer{
+        width: 40%;
+        margin: 10px auto;
+    }
+}
+.news{
+    .container{
+        margin: 20px auto;
+        flex-direction: column;
+    }
+    .column{
+        width: 90%;
+        margin: auto auto 20px auto;
+    }
+
+}
+}
+@media #{$medium}{
+.home{
+    .home-text{
+        width: 95%;
+    }
+}
+.about{
+    .container{
+        flex-direction: column;
+    
+        .left-about{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .right-about{
+            width: 80%;
+            margin: auto;
+        }
     }
 }
 }

@@ -10,12 +10,28 @@ body {
   padding: auto;
   max-width: 1170px; }
 
-.custom-text1, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .four-row h5, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3 {
+button {
+  border-radius: 28px;
+  background-color: #daa769;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.5% 5%;
+  font-weight: 800;
+  letter-spacing: 0.8px; }
+  @media (max-width: 1024px) {
+    button {
+      padding: 15px 25px; } }
+
+.custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
   @media (max-width: 1024px) {
-    .custom-text1, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .four-row h5, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3 {
+    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3 {
       font-size: 14px; } }
+  @media (max-width: 767px) {
+    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3 {
+      font-size: 13px; } }
 
 .custom-text2, .home .left-nav .logo-title h2 {
   font-family: "Roboto Slab", serif;
@@ -23,42 +39,51 @@ body {
   @media (max-width: 1024px) {
     .custom-text2, .home .left-nav .logo-title h2 {
       font-size: 20px; } }
+  @media (max-width: 767px) {
+    .custom-text2, .home .left-nav .logo-title h2 {
+      font-size: 18px; } }
 
-.custom-text3, .home .home-text p, .vision p {
+.custom-text3, .home .home-text p, .vision p, .meet p, .join p {
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
   font-weight: 200; }
   @media (max-width: 1024px) {
-    .custom-text3, .home .home-text p, .vision p {
+    .custom-text3, .home .home-text p, .vision p, .meet p, .join p {
       font-size: 20px; } }
+  @media (max-width: 1024px) {
+    .custom-text3, .home .home-text p, .vision p, .meet p, .join p {
+      font-size: 18px; } }
 
-.custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1 {
+.custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1 {
   font-family: "Roboto Slab", serif;
   font-size: 23px;
   color: #534d51; }
   @media (max-width: 1024px) {
-    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1 {
+    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1 {
       font-size: 18px; } }
+  @media (max-width: 1024px) {
+    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1 {
+      font-size: 16px; } }
 
-.custom-text5, .home .home-text h1, .facts .four-row h1 {
+.custom-text5, .home .home-text h1, .facts .container h1 {
   font-family: "Roboto Slab", serif;
   font-size: 58px;
   font-weight: 700; }
   @media (max-width: 1024px) {
-    .custom-text5, .home .home-text h1, .facts .four-row h1 {
+    .custom-text5, .home .home-text h1, .facts .container h1 {
       font-size: 35px; } }
 
-.flex-row, .container, .home .left-nav, .home .right-nav, .cause .three-article, .cause .numbers, .vision .three-logo, .facts .four-row {
+.flex-row, .container, .home .left-nav, .home .right-nav, .cause .numbers {
   display: flex;
   justify-content: space-between;
   flex-direction: row; }
 
-.flex-column, .home .left-nav .logo-title, .about .left-about, .cause .column, .cause .article-desc, .vision .logo-wrap {
+.flex-column, .column, .home .left-nav .logo-title, .about .left-about, .cause .article-desc, .vision .logo-wrap, .news .article-desc {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .four-row h5 {
+.descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p {
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
@@ -68,7 +93,7 @@ body {
   cursor: pointer;
   transition: .3s ease-in-out; }
 
-.img, .about .right-about img, .cause .column img {
+.img, .about .right-about img, .cause .column img, .meet .container img, .news .column img, .gallery .container img {
   max-width: 100%;
   max-height: 100%; }
 
@@ -76,10 +101,10 @@ body {
   height: auto;
   width: auto; }
 
-.sec-padding, .about, .cause, .vision, .facts {
+.sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery {
   padding: 100px 0; }
   @media (max-width: 1024px) {
-    .sec-padding, .about, .cause, .vision, .facts {
+    .sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery {
       padding: 50px 0; } }
 
 .home {
@@ -127,7 +152,7 @@ body {
       color: #fff;
       text-transform: uppercase;
       border: none;
-      padding: 20px 35px;
+      padding: 1.5% 5%;
       font-weight: 800;
       letter-spacing: 0.8px; }
       @media (max-width: 1024px) {
@@ -180,7 +205,7 @@ body {
       @media (max-width: 1024px) {
         .cause .cause-title h1 {
           font-size: 25px; } }
-  .cause .three-article {
+  .cause .container {
     margin: 70px 0; }
   .cause .column {
     justify-content: space-between;
@@ -212,7 +237,7 @@ body {
   color: #96948f;
   font-size: 23px; }
 
-.vision .three-logo {
+.vision .container {
   margin: 50px 0; }
 
 .vision .logo-wrap {
@@ -243,16 +268,114 @@ body {
     @media (max-width: 1024px) {
       .facts h1 {
         font-size: 25px; } }
-  .facts .four-row {
+  .facts .container {
     padding: 60px; }
-    .facts .four-row h5 {
+    .facts .container h5 {
       color: #fff; }
-    .facts .four-row h1 {
+    .facts .container h1 {
       letter-spacing: 1px; }
+
+.meet {
+  text-align: center; }
+  .meet h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 400; }
+    @media (max-width: 1024px) {
+      .meet h1 {
+        font-size: 25px; } }
+  .meet p {
+    color: #96948f; }
+  .meet .container {
+    margin: 40px 0; }
+    .meet .container img {
+      margin: 10px 0; }
+    .meet .container p {
+      font-size: 18px; }
+
+.join {
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/trash.jpg);
+  padding: 50px 0;
+  color: #fff;
+  text-align: center; }
+  .join h2 {
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fff; }
+    @media (max-width: 1024px) {
+      .join h2 {
+        font-size: 25px; } }
+  .join button {
+    padding: 1.5% 5%;
+    margin: 40px 0; }
+
+.news {
+  background-color: #f7f6ef; }
+  .news h3 {
+    color: #ebc33a;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-align: center; }
+  .news h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 400; }
+    @media (max-width: 1024px) {
+      .news h1 {
+        font-size: 25px; } }
+  .news .container {
+    margin: 70px 0; }
+  .news .column {
+    justify-content: space-between;
+    width: 32%;
+    background-color: #fff; }
+  .news .article-desc {
+    padding: 15px 25px;
+    text-align: left; }
+    .news .article-desc h3 {
+      text-transform: capitalize;
+      text-align: left;
+      margin-bottom: 10px; }
+
+.gallery {
+  text-align: center; }
+  .gallery h3 {
+    color: #ebc33a;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.8px; }
+  .gallery h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 400; }
+    @media (max-width: 1024px) {
+      .gallery h1 {
+        font-size: 25px; } }
+  .gallery .container {
+    flex-wrap: wrap;
+    margin: 10px; }
+    .gallery .container img {
+      display: inline-block; }
 
 @media (max-width: 1024px) {
   .home {
     padding: 0; }
+    .home .right-nav {
+      width: 80%;
+      justify-content: space-between; }
+      .home .right-nav ul {
+        justify-content: flex-start; }
     .home .home-text {
       margin: 30px 0; }
       .home .home-text h1 {
@@ -260,9 +383,78 @@ body {
         font-size: 35px; }
   .about {
     padding: 20px 0; }
-  .cause .three-article {
+  .cause .container {
     margin: 30px 0; }
   .vision p {
     font-size: 20px; }
-  .facts .four-row {
-    padding: 30px; } }
+  .facts .container {
+    padding: 30px; }
+  .meet .volunteer {
+    margin-right: 15px; }
+    .meet .volunteer p {
+      font-size: 16px; }
+  .join {
+    padding: 20px; } }
+
+@media (max-width: 767px) {
+  .home .left-nav {
+    width: 30%; }
+  .home .right-nav {
+    display: none; }
+  .about .left-about {
+    width: 60%; }
+  .about .right-about {
+    width: 38%; }
+  .cause .container {
+    margin: 20px auto;
+    flex-direction: column; }
+  .cause .column {
+    width: 90%;
+    margin: auto auto 20px auto; }
+  .vision h1 {
+    margin: 0 3%; }
+  .vision p {
+    margin: 0 3%; }
+  .vision .container {
+    flex-direction: column;
+    margin: 20px auto; }
+  .vision .logo-wrap {
+    text-align: center;
+    width: 70%;
+    margin: 10px auto; }
+    .vision .logo-wrap img {
+      margin: auto; }
+  .facts {
+    padding: 20px; }
+    .facts .four-row {
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+      padding: 20px; }
+    .facts .row-container {
+      width: 40%;
+      margin: 10px; }
+  .meet .container {
+    flex-wrap: wrap; }
+  .meet .volunteer {
+    width: 40%;
+    margin: 10px auto; }
+  .news .container {
+    margin: 20px auto;
+    flex-direction: column; }
+  .news .column {
+    width: 90%;
+    margin: auto auto 20px auto; } }
+
+@media (max-width: 680px) {
+  .home .home-text {
+    width: 95%; }
+  .about .container {
+    flex-direction: column; }
+    .about .container .left-about {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px; }
+    .about .container .right-about {
+      width: 80%;
+      margin: auto; } }

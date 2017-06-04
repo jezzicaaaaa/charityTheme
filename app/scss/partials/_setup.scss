@@ -17,3 +17,9 @@ body{
 .container{
     @extend .flex-row;
 }
+.column{
+    @extend .flex-column;
+}
+button{
+    @include button;
+}

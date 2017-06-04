@@ -11,7 +11,7 @@
     color: #fff;
     text-transform: uppercase;   
     border: none;
-    padding: 20px 35px;   
+    padding: 1.5% 5%; 
     font-weight: 800;
     letter-spacing: 0.8px;
     
@@ -49,9 +49,9 @@ $bgColor: #f7f6ef;
 $orange: #f48c27;
 
 //media queries
-$default-width: 980px;
 $large-display: 1170px;
 
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(max-width: 1024px)";
 $default: "(max-width: 767px)";
+$medium: "(max-width: 680px)";
