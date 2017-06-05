@@ -6,7 +6,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 .wrapper {
-  margin: 5% 1%;
+  margin: auto;
   padding: auto;
   max-width: 1170px; }
 
@@ -18,29 +18,30 @@ button {
   border: none;
   padding: 2.5% 5%;
   font-weight: 800;
-  letter-spacing: 0.8px; }
+  letter-spacing: 0.8px;
+  transition: .3s ease-in-out; }
   @media (max-width: 1024px) {
     button {
       padding: 15px 25px; } }
 
-.custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3 {
+.custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
   @media (max-width: 1024px) {
-    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3 {
+    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
       font-size: 14px; } }
   @media (max-width: 767px) {
-    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3 {
+    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
       font-size: 13px; } }
 
-.custom-text2, .home .left-nav .logo-title h2 {
+.custom-text2, .home .left-nav .logo-title h2, footer .logo-title h2 {
   font-family: "Roboto Slab", serif;
   font-size: 25px; }
   @media (max-width: 1024px) {
-    .custom-text2, .home .left-nav .logo-title h2 {
+    .custom-text2, .home .left-nav .logo-title h2, footer .logo-title h2 {
       font-size: 20px; } }
   @media (max-width: 767px) {
-    .custom-text2, .home .left-nav .logo-title h2 {
+    .custom-text2, .home .left-nav .logo-title h2, footer .logo-title h2 {
       font-size: 18px; } }
 
 .custom-text3, .home .home-text p, .vision p, .meet p, .join p {
@@ -54,15 +55,15 @@ button {
     .custom-text3, .home .home-text p, .vision p, .meet p, .join p {
       font-size: 18px; } }
 
-.custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1 {
+.custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
   font-family: "Roboto Slab", serif;
   font-size: 23px;
   color: #534d51; }
   @media (max-width: 1024px) {
-    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1 {
+    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
       font-size: 18px; } }
   @media (max-width: 1024px) {
-    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1 {
+    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
       font-size: 16px; } }
 
 .custom-text5, .home .home-text h1, .facts .container h1 {
@@ -78,12 +79,12 @@ button {
   justify-content: space-between;
   flex-direction: row; }
 
-.flex-column, .column, .home .left-nav .logo-title, .about .left-about, .cause .article-desc, .vision .logo-wrap, .news .article-desc {
+.flex-column, .column, .home .left-nav .logo-title, .about .left-about, .cause .article-desc, .vision .logo-wrap, .news .article-desc, footer .logo-title {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
-.descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p {
+.descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p {
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
@@ -101,10 +102,10 @@ button {
   height: auto;
   width: auto; }
 
-.sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery {
+.sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery, .testimonials {
   padding: 100px 0; }
   @media (max-width: 1024px) {
-    .sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery {
+    .sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery, .testimonials {
       padding: 50px 0; } }
 
 .home {
@@ -113,7 +114,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 50px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15)), url(../assets/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/background.jpg);
   overflow: hidden;
   color: #fff; }
   .home .left-nav {
@@ -121,7 +122,8 @@ button {
     .home .left-nav .logo-title h5 {
       font-weight: 400; }
   .home .right-nav {
-    width: 70%; }
+    width: 70%;
+    justify-content: flex-end; }
     .home .right-nav ul {
       display: flex;
       justify-content: flex-end;
@@ -154,10 +156,14 @@ button {
       border: none;
       padding: 2.5% 5%;
       font-weight: 800;
-      letter-spacing: 0.8px; }
+      letter-spacing: 0.8px;
+      transition: .3s ease-in-out; }
       @media (max-width: 1024px) {
         .home .home-text button {
           padding: 15px 25px; } }
+    .home .home-text button:hover {
+      cursor: pointer;
+      background-color: #96948f; }
 
 .about .left-about {
   text-align: left;
@@ -409,6 +415,75 @@ button {
       right: 0;
       text-align: center;
       color: inherit; }
+
+.testimonials h3 {
+  color: #ebc33a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-align: center; }
+
+.testimonials h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center; }
+  @media (max-width: 1024px) {
+    .testimonials h1 {
+      font-size: 25px; } }
+
+.testimonials .container {
+  padding: 3% 0; }
+
+.testimonials .testimonial {
+  background-color: #f7f6ef;
+  height: 200px;
+  padding: 30px 80px;
+  margin-right: 20px; }
+
+.testimonials .testimonial:nth-child(2) {
+  margin-right: 0; }
+
+.testimonials h5 {
+  font-size: 16px;
+  margin-top: 30px; }
+
+.logos {
+  background-color: #f7f6ef;
+  padding: 50px; }
+
+footer {
+  padding: 50px;
+  background-color: #2c292b;
+  color: #fff; }
+  footer .column {
+    width: 30%;
+    margin: auto;
+    text-align: center; }
+  footer .container:nth-child(1) {
+    margin: auto auto 30px auto; }
+  footer .container:nth-child(2) {
+    justify-content: space-around;
+    margin-bottom: 30px; }
+  footer img {
+    margin-right: 50px; }
+  footer .logo-title h5 {
+    font-weight: 400; }
+  footer i {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #2c292b;
+    width: 20px;
+    transition: .3s ease-in-out; }
+  footer i:hover {
+    background-color: #f48c27;
+    color: #fff;
+    cursor: pointer; }
+  footer p {
+    color: #96948f;
+    padding: 5px 0; }
 
 @media (max-width: 1024px) {
   .home {

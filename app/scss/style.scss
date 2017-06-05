@@ -5,7 +5,7 @@
 .home{
     @include background;
     padding-bottom: 50px;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15) ), url(../assets/background.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../assets/background.jpg);
     overflow: hidden;
     color: #fff;
 
@@ -33,6 +33,7 @@
         @extend .flex-row;
         @extend .custom-text1;
         width: 70%;
+        justify-content: flex-end;
 
         ul{
             display: flex;
@@ -72,6 +73,10 @@
         }
         button{
             @include button;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: $desColor;
         }
     }
 }
@@ -161,7 +166,7 @@
         @extend .flex-row;
 
         p{
-            color:#2c292b;
+            color:$coffee;
             margin: 10px 0;
 
             span{
@@ -381,9 +386,91 @@
         }
     }
 }
+.testimonials{
+    @extend .sec-padding;
 
+    h3{
+        @include yellow-phrases;
+        text-align: center;
+    }
+    h1{
+        @include section-title;
+        text-align: center;
+    }
+    .container{
+        padding: 3% 0;
+    }
+    .testimonial{
+        background-color: $bgColor;
+        height: 200px;
+        padding: 30px 80px;
+        margin-right: 20px;
+    }
+    .testimonial:nth-child(2){
+        margin-right: 0;
+    }
+    p{
+        @extend .descriptions;
+    }
+    h5{
+        @extend .custom-text4;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+.logos{
+    background-color: $bgColor;
+    padding: 50px;
+}
+footer{
+    padding: 50px;
+    background-color: $coffee;
+    color: #fff;
+    .column{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+    }
+    .container:nth-child(1){
+        margin:auto auto 30px auto;
+    }
+    .container:nth-child(2){
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    img{
+        margin-right: 50px;
+    }
+    .logo-title{
+        @extend .flex-column;
+            
+        h2{
+            @extend .custom-text2;   
+        }
 
-
+        h5{
+            @extend .custom-text1;
+            font-weight: 400;
+        }
+    }
+    i{
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $coffee;
+        width: 20px;
+        transition: .3s ease-in-out;
+    }
+    i:hover{
+        background-color: $orange;
+        color: #fff;
+        cursor:pointer;
+    }
+    p{
+        color: $desColor;
+        padding: 5px 0;
+    }
+}
 
 
 

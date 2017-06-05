@@ -14,6 +14,7 @@
     padding: 2.5% 5%; 
     font-weight: 800;
     letter-spacing: 0.8px;
+    transition: .3s ease-in-out;
     
     @media #{$desktop} {
         padding: 15px 25px;
@@ -47,6 +48,7 @@ $titleColor: #534d51;
 $desColor: #96948f;    
 $bgColor: #f7f6ef;
 $orange: #f48c27;
+$coffee: #2c292b;
 
 //media queries
 $large-display: 1170px;
