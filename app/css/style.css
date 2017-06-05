@@ -16,7 +16,7 @@ button {
   color: #fff;
   text-transform: uppercase;
   border: none;
-  padding: 1.5% 5%;
+  padding: 2.5% 5%;
   font-weight: 800;
   letter-spacing: 0.8px; }
   @media (max-width: 1024px) {
@@ -152,7 +152,7 @@ button {
       color: #fff;
       text-transform: uppercase;
       border: none;
-      padding: 1.5% 5%;
+      padding: 2.5% 5%;
       font-weight: 800;
       letter-spacing: 0.8px; }
       @media (max-width: 1024px) {
@@ -364,9 +364,51 @@ button {
         font-size: 25px; } }
   .gallery .container {
     flex-wrap: wrap;
-    margin: 10px; }
+    margin: 30px 0; }
+    .gallery .container .item {
+      display: inline-block;
+      overflow: hidden;
+      width: 49.5%;
+      margin: 5px 0;
+      position: relative; }
     .gallery .container img {
-      display: inline-block; }
+      -moz-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      vertical-align: middle;
+      -webkit-filter: brightness(100%); }
+    .gallery .container span {
+      color: white;
+      font-size: 20px; }
+    .gallery .container .item:hover img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      cursor: pointer;
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease; }
+    .gallery .container .item:hover a {
+      opacity: 1;
+      /* added */
+      top: 0;
+      /* added */
+      z-index: 500; }
+    .gallery .container .item:hover span {
+      top: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%); }
+    .gallery .container .item a {
+      display: block;
+      position: absolute;
+      top: -100%;
+      opacity: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      color: inherit; }
 
 @media (max-width: 1024px) {
   .home {
