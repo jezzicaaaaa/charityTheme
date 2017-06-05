@@ -24,14 +24,14 @@ button {
     button {
       padding: 15px 25px; } }
 
-.custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
+.custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials blockquote, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
   @media (max-width: 1024px) {
-    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
+    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials blockquote, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
       font-size: 14px; } }
   @media (max-width: 767px) {
-    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
+    .custom-text1, button, .descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials blockquote, .home .left-nav .logo-title h5, .home .right-nav, .home .home-text h3, .home .home-text button, .cause .cause-title h3, .facts h3, .news h3, .gallery h3, .testimonials h3, footer .logo-title h5 {
       font-size: 13px; } }
 
 .custom-text2, .home .left-nav .logo-title h2, footer .logo-title h2 {
@@ -55,15 +55,15 @@ button {
     .custom-text3, .home .home-text p, .vision p, .meet p, .join p {
       font-size: 18px; } }
 
-.custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
+.custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts .head, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
   font-family: "Roboto Slab", serif;
   font-size: 23px;
   color: #534d51; }
   @media (max-width: 1024px) {
-    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
+    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts .head, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
       font-size: 18px; } }
   @media (max-width: 1024px) {
-    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts h1, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
+    .custom-text4, .about .left-about h1, .cause .cause-title h1, .cause .article-desc h3, .vision h1, .vision .logo-wrap h3, .facts .head, .meet h1, .meet .container h3, .join h2, .news h1, .news .article-desc h3, .gallery h1, .testimonials h1, .testimonials h5 {
       font-size: 16px; } }
 
 .custom-text5, .home .home-text h1, .facts .container h1 {
@@ -84,7 +84,7 @@ button {
   flex-direction: column;
   justify-content: space-around; }
 
-.descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials p {
+.descriptions, .about .left-about p, .cause .article-desc p, .vision .logo-wrap p, .facts .container h5, .news .article-desc p, .testimonials blockquote {
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
@@ -167,19 +167,21 @@ button {
 
 .about .left-about {
   text-align: left;
-  width: 47%;
-  margin-left: 30px; }
+  width: 50%; }
   .about .left-about h1 {
     text-transform: capitalize;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 400;
-    margin-bottom: 20px; }
+    margin-bottom: 15px;
+    border-left: 2px solid #ebc33a;
+    padding-left: 40px; }
     @media (max-width: 1024px) {
       .about .left-about h1 {
         font-size: 25px; } }
   .about .left-about p {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    padding-left: 40px; }
     .about .left-about p i {
       color: #ebc33a;
       margin-right: 20px; }
@@ -207,23 +209,39 @@ button {
       text-transform: capitalize;
       font-size: 40px;
       line-height: 1.2;
-      font-weight: 400; }
+      font-weight: 400;
+      position: relative; }
       @media (max-width: 1024px) {
         .cause .cause-title h1 {
           font-size: 25px; } }
+    .cause .cause-title h1::after {
+      content: "";
+      height: 5px;
+      width: 150px;
+      color: #ebc33a;
+      position: absolute;
+      border-bottom: 2px solid #ebc33a;
+      left: 220px;
+      bottom: -15px; }
   .cause .container {
     margin: 70px 0; }
   .cause .column {
     justify-content: space-between;
     width: 32%;
     background-color: #fff; }
+    .cause .column img {
+      height: 250px; }
   .cause .article-desc {
     padding: 15px 25px; }
     .cause .article-desc h3 {
       font-weight: 700;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      transition: .3s ease-in-out; }
     .cause .article-desc p {
       margin-bottom: 10px; }
+    .cause .article-desc h3:hover {
+      color: #ebc33a;
+      cursor: pointer; }
   .cause .numbers p {
     color: #2c292b;
     margin: 10px 0; }
@@ -265,15 +283,25 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.8px; }
-  .facts h1 {
+  .facts .head {
     text-transform: capitalize;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 400;
-    color: #fff; }
+    color: #fff;
+    position: relative; }
     @media (max-width: 1024px) {
-      .facts h1 {
+      .facts .head {
         font-size: 25px; } }
+  .facts .head::after {
+    content: "";
+    height: 5px;
+    width: 150px;
+    color: #ebc33a;
+    position: absolute;
+    border-bottom: 2px solid #ebc33a;
+    top: 60px;
+    left: 510px; }
   .facts .container {
     padding: 60px; }
     .facts .container h5 {
@@ -335,25 +363,46 @@ button {
     text-transform: capitalize;
     font-size: 40px;
     line-height: 1.2;
-    font-weight: 400; }
+    font-weight: 400;
+    position: relative; }
     @media (max-width: 1024px) {
       .news h1 {
         font-size: 25px; } }
+  .news h1::after {
+    content: "";
+    height: 5px;
+    width: 150px;
+    color: #ebc33a;
+    position: absolute;
+    border-bottom: 2px solid #ebc33a;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 480px) {
+      .news h1::after {
+        display: none; } }
   .news .container {
     margin: 70px 0; }
   .news .column {
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 32%;
     background-color: #fff; }
+    .news .column img {
+      height: 250px; }
   .news .article-desc {
     padding: 15px 25px;
     text-align: left; }
     .news .article-desc h3 {
       text-transform: capitalize;
       text-align: left;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      transition: .3s ease-in-out; }
+    .news .article-desc h3:hover {
+      color: #ebc33a;
+      cursor: pointer; }
 
 .gallery {
+  padding-bottom: 0;
   text-align: center; }
   .gallery h3 {
     color: #ebc33a;
@@ -364,17 +413,27 @@ button {
     text-transform: capitalize;
     font-size: 40px;
     line-height: 1.2;
-    font-weight: 400; }
+    font-weight: 400;
+    position: relative; }
     @media (max-width: 1024px) {
       .gallery h1 {
         font-size: 25px; } }
+  .gallery h1::after {
+    content: "";
+    height: 5px;
+    width: 150px;
+    color: #ebc33a;
+    position: absolute;
+    border-bottom: 2px solid #ebc33a;
+    top: 60px;
+    left: 520px; }
   .gallery .container {
-    flex-wrap: wrap;
-    margin: 30px 0; }
+    flex-wrap: wrap; }
     .gallery .container .item {
       display: inline-block;
       overflow: hidden;
       width: 49.5%;
+      height: 400px;
       margin: 5px 0;
       position: relative; }
     .gallery .container img {
@@ -382,10 +441,14 @@ button {
       -webkit-transition: all 0.2s;
       transition: all 0.2s;
       vertical-align: middle;
-      -webkit-filter: brightness(100%); }
+      -webkit-filter: brightness(100%);
+      width: 1200px;
+      height: 800px; }
     .gallery .container span {
       color: white;
-      font-size: 20px; }
+      font-size: 25px; }
+    .gallery .container .item:hover span {
+      animation: fadeInDown .4s ease-in both; }
     .gallery .container .item:hover img {
       -moz-transform: scale(1.1);
       -webkit-transform: scale(1.1);
@@ -416,6 +479,11 @@ button {
       text-align: center;
       color: inherit; }
 
+@keyframes fadeInDown {
+  0% {
+    transform: scale(1);
+    opacity: 0; } }
+
 .testimonials h3 {
   color: #ebc33a;
   text-transform: uppercase;
@@ -428,13 +496,25 @@ button {
   font-size: 40px;
   line-height: 1.2;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   @media (max-width: 1024px) {
     .testimonials h1 {
       font-size: 25px; } }
 
+.testimonials h1::after {
+  content: "";
+  height: 5px;
+  width: 150px;
+  color: #ebc33a;
+  position: absolute;
+  border-bottom: 2px solid #ebc33a;
+  top: 60px;
+  left: 510px; }
+
 .testimonials .container {
-  padding: 3% 0; }
+  padding: 3% 0;
+  margin-top: 30px; }
 
 .testimonials .testimonial {
   background-color: #f7f6ef;
@@ -445,9 +525,23 @@ button {
 .testimonials .testimonial:nth-child(2) {
   margin-right: 0; }
 
+.testimonials blockquote {
+  position: relative; }
+
 .testimonials h5 {
   font-size: 16px;
   margin-top: 30px; }
+
+.testimonials blockquote::before {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 60px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -50px;
+  top: -40px;
+  color: #7a7a7a; }
 
 .logos {
   background-color: #f7f6ef;

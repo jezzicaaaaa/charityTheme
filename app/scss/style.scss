@@ -86,16 +86,19 @@
     .left-about{
         @extend .flex-column;
         text-align: left;
-        width: 47%;
-        margin-left: 30px;
+        width: 50%;
+       
 
         h1{
             @include section-title;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            border-left: 2px solid $yellow;
+            padding-left: 40px;
         }
         p{
             @extend .descriptions;
             margin-bottom: 15px;
+            padding-left: 40px;
 
             i{
                 color: $yellow;
@@ -133,6 +136,18 @@
         }
         h1{
             @include section-title;
+            position: relative;
+
+        }
+        h1::after{
+        content: "";
+        height: 5px;
+        width: 150px;
+        color: $yellow;
+        position: absolute;
+        border-bottom: 2px solid $yellow;
+        left: 220px;
+        bottom: -15px;
         }
     }
     .container{
@@ -146,6 +161,7 @@
     
         img{
             @extend .img;
+            height: 250px;
         }
     }
     .article-desc{
@@ -156,10 +172,15 @@
             @extend .custom-text4;
             font-weight: 700;
             margin-bottom: 15px;
+            transition: .3s ease-in-out
         }
         p{
             @extend .descriptions;
             margin-bottom: 10px;
+        }
+        h3:hover{
+            color: $yellow;
+            cursor:pointer;
         }
     }
     .numbers{
@@ -215,9 +236,20 @@
     h3{
         @include yellow-phrases;
     }
-    h1{
+    .head{
         @include section-title;
         color: #fff;
+        position: relative;
+    }
+    .head::after{
+        content: "";
+        height: 5px;
+        width: 150px;
+        color: $yellow;
+        position: absolute;
+        border-bottom: 2px solid $yellow;
+        top: 60px;
+        left: 510px;  
     }
     .container{
         padding: 60px;
@@ -288,18 +320,34 @@
     h1{
         text-align: center;
         @include section-title;
+        position: relative;
+    }
+    h1::after{
+        content: "";
+        height: 5px;
+        width: 150px;
+        color: $yellow;
+        position: absolute;
+        border-bottom: 2px solid $yellow;
+        top: 60px;
+        left: 50%;  
+        transform:translateX(-50%);
+        @media(max-width:480px) {
+            display:none;
+        }
     }
     .container{
         margin: 70px 0;
     }
 
     .column{
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 32%;
         background-color: #fff;
     
         img{
             @extend .img;
+            height: 250px;
         }
     }
     .article-desc{
@@ -312,30 +360,47 @@
             text-transform: capitalize;
             text-align: left;
             margin-bottom: 10px;
+            transition: .3s ease-in-out
         }
         p{
             @extend .descriptions;
+        }
+        h3:hover{
+            color: $yellow;
+            cursor:pointer;
         }
     }
 }
 .gallery{
     @extend .sec-padding;
+    padding-bottom: 0;
     text-align: center;
     h3{
         @include yellow-phrases;
     }
     h1{
         @include section-title;
+        position: relative;
+    }
+    h1::after{
+        content: "";
+        height: 5px;
+        width: 150px;
+        color: $yellow;
+        position: absolute;
+        border-bottom: 2px solid $yellow;
+        top: 60px;
+        left: 520px;
+        
     }
     .container{
         flex-wrap: wrap;
-        margin: 30px 0;
-
 
         .item{
             display: inline-block;
             overflow: hidden;
             width: 49.5%;
+            height: 400px;
             margin: 5px 0;
             position: relative;
 
@@ -347,11 +412,15 @@
             transition: all 0.2s; 
             vertical-align: middle;
             -webkit-filter: brightness(100%);
-                       
+            width: 1200px;
+            height: 800px;
         }
         span{
             color: white;
-            font-size: 20px;
+            font-size: 25px;
+        }
+        .item:hover span{
+            animation: fadeInDown .4s ease-in both;
         }
         .item:hover img{
             -moz-transform: scale(1.1);
@@ -386,6 +455,14 @@
         }
     }
 }
+//ANIMATION
+@keyframes fadeInDown {
+	0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+//ANIMATION ENDS
 .testimonials{
     @extend .sec-padding;
 
@@ -396,9 +473,21 @@
     h1{
         @include section-title;
         text-align: center;
+        position: relative;
+    }
+    h1::after{
+        content: "";
+        height: 5px;
+        width: 150px;
+        color: $yellow;
+        position: absolute;
+        border-bottom: 2px solid $yellow;
+        top: 60px;
+        left: 510px;  
     }
     .container{
         padding: 3% 0;
+        margin-top: 30px;
     }
     .testimonial{
         background-color: $bgColor;
@@ -409,13 +498,25 @@
     .testimonial:nth-child(2){
         margin-right: 0;
     }
-    p{
+    blockquote{
         @extend .descriptions;
+        position: relative;
     }
     h5{
         @extend .custom-text4;
         font-size: 16px;
         margin-top: 30px;
+    }
+    blockquote::before{
+        display: block;
+        font-family: Georgia, serif;
+        font-size: 60px;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -50px;
+        top: -40px;
+        color: #7a7a7a;
     }
 }
 .logos{
@@ -472,16 +573,8 @@ footer{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+//MEDIA QUERIES STARTS; 
+//max-width: 1024px
 @media #{$desktop}{
 .home{
     padding: 0;
@@ -537,7 +630,7 @@ footer{
 }
 }
 
-
+//max-width: 767px;
 @media #{$default}{
 .home{
     .left-nav{
@@ -621,6 +714,8 @@ footer{
 
 }
 }
+
+//max-width: 680px;
 @media #{$medium}{
 .home{
     .home-text{
