@@ -95,5 +95,7 @@
     @media #{$desktop} {
         padding: 50px 20px;
     }
-    
+    @media #{$default}{
+        padding: 20px 0;
+    }
 }
