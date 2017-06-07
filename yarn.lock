@@ -1466,6 +1466,10 @@ liftoff@^2.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
+lightbox2@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.9.0.tgz#f9a2fdb41ab3ca94bf0f769210b59bb14a5d5f62"
+
 limiter@^1.0.5:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/limiter/-/limiter-1.1.0.tgz#6e2bd12ca3fcdaa11f224e2e53c896df3f08d913"

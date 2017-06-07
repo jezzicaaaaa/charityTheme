@@ -103,10 +103,10 @@ button {
   width: auto; }
 
 .sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery, .testimonials {
-  padding: 100px 0; }
+  padding: 100px 20px; }
   @media (max-width: 1024px) {
     .sec-padding, .about, .cause, .vision, .facts, .meet, .news, .gallery, .testimonials {
-      padding: 50px 0; } }
+      padding: 50px 10; } }
 
 .home {
   background-attachment: fixed;
@@ -322,9 +322,9 @@ button {
   .meet p {
     color: #96948f; }
   .meet .container {
-    margin: 40px 0; }
-    .meet .container img {
-      margin: 10px 0; }
+    margin: 40px 10px; }
+    .meet .container .volunteer {
+      margin: 10px; }
     .meet .container p {
       font-size: 18px; }
 
@@ -428,13 +428,14 @@ button {
     top: 60px;
     left: 520px; }
   .gallery .container {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 50px; }
     .gallery .container .item {
       display: inline-block;
       overflow: hidden;
       width: 49.5%;
-      height: 400px;
-      margin: 5px 0;
+      height: 350px;
+      margin-top: 10px;
       position: relative; }
     .gallery .container img {
       -moz-transition: all 0.2s;
@@ -477,7 +478,8 @@ button {
       bottom: 0;
       right: 0;
       text-align: center;
-      color: inherit; }
+      color: inherit;
+      height: inherit; }
 
 @keyframes fadeInDown {
   0% {
@@ -518,7 +520,7 @@ button {
 
 .testimonials .testimonial {
   background-color: #f7f6ef;
-  height: 200px;
+  height: auto;
   padding: 30px 80px;
   margin-right: 20px; }
 
@@ -546,6 +548,8 @@ button {
 .logos {
   background-color: #f7f6ef;
   padding: 50px; }
+  .logos img {
+    width: 15%; }
 
 footer {
   padding: 50px;
@@ -561,7 +565,8 @@ footer {
     justify-content: space-around;
     margin-bottom: 30px; }
   footer img {
-    margin-right: 50px; }
+    margin-right: 50px;
+    width: auto; }
   footer .logo-title h5 {
     font-weight: 400; }
   footer i {
@@ -578,6 +583,85 @@ footer {
   footer p {
     color: #96948f;
     padding: 5px 0; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
+
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.item::after {
+  content: "";
+  display: table;
+  clear: both; }
 
 @media (max-width: 1024px) {
   .home {
@@ -605,7 +689,9 @@ footer {
     .meet .volunteer p {
       font-size: 16px; }
   .join {
-    padding: 20px; } }
+    padding: 20px; }
+  footer .column {
+    width: 40%; } }
 
 @media (max-width: 767px) {
   .home .left-nav {
@@ -668,4 +754,24 @@ footer {
       margin-bottom: 20px; }
     .about .container .right-about {
       width: 80%;
-      margin: auto; } }
+      margin: auto; }
+  .meet .volunteer {
+    margin: auto; }
+  .facts .container {
+    width: 80%;
+    display: inline-block; }
+    .facts .container .row-container {
+      width: 40%;
+      display: inline-block; }
+      .facts .container .row-container h1 {
+        font-size: 25px; }
+  .gallery .container .item {
+    height: auto;
+    padding: 0; }
+    .gallery .container .item img {
+      height: auto;
+      margin: 10px 0; } }
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 1% 4%; } }
