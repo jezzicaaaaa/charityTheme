@@ -9,10 +9,19 @@ body{
     margin: auto;
     padding: auto;
     max-width: $large-display;
+    @media #{$desktop} {
+        max-width: 1024px;
+    }
+    @media #{$default}{
+        max-width: 767px;
+    }
+    @media #{$medium}{
+        max-width: 680px;
+    }
+    @media #{$mobile}{
+        max-width: 480px;
+    }
 
-    // @media(max-width: $mobile_device_width) {
-    //     max-width: $mobile_max_width;
-    // }
 }
 .container{
     @extend .flex-row;

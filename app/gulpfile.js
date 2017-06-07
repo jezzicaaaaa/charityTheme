@@ -8,9 +8,9 @@ var reload = browserSync.create();
 
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/**/*.scss')
+    return gulp.src('scss/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
         stream: true
     }))
@@ -25,12 +25,12 @@ gulp.task('browserSync', () => {
 
 //gulp watch syntax
 gulp.task('watch', function(){
-    ('app/scss/**/*.scss', ['sass']);
+    ('scss/**/*.scss', ['sass']);
 });
 
 gulp.task('watch', ['browserSync'], function(){
-    gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/index.html').reload;
+    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('index.html').reload;
 });
 
 gulp.task('default', ['sass', 'watch']);
