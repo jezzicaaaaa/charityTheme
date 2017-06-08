@@ -35,6 +35,7 @@
         width: 70%;
         justify-content: flex-end;
 
+        
         ul{
             display: flex;
             justify-content: flex-end;
@@ -561,7 +562,7 @@ footer{
 .home{
     padding: 50px 20px;
    .right-nav{
-       width: 80%;555555555555555
+       width: 80%;
 
        ul{
             justify-content: flex-start;
@@ -655,9 +656,9 @@ footer{
     .left-nav{
         width: 30%;
     }
-    .right-nav{
-        display: none;
-    }
+    // .right-nav{
+    //     display: none;
+    // }
 }
 .about{
     .left-about{
@@ -925,6 +926,101 @@ footer{
                 margin: 0 2px;
                 padding: 15px;
             }
+        }
+    }
+}
+}
+
+@media #{$default}{
+.home{
+    .right-nav{
+        width: 100%;
+        .big-menu{
+            display: none;
+        }
+        
+        .hamburger{
+            background:none;
+            position:absolute;
+            top:0;
+            right: 0;
+            line-height:45px;
+            padding:5px 15px 0px 15px;
+            color:#999;
+            border:0;
+            font-size:1.4em;
+            font-weight:bold;
+            cursor:pointer;
+            outline:none;
+            z-index:10000000000000;
+        }
+        .cross{
+            background:none;
+            position:absolute;
+            top:0px;
+            right:0;
+            padding:7px 15px 0px 15px;
+            color:#999;
+            border:0;
+            font-size:3em;
+            line-height:65px;
+            font-weight:bold;
+            cursor:pointer;
+            outline:none;
+            z-index:10000000000000;
+        }
+        .menu{
+            z-index:1000000; 
+            font-weight:bold;
+            width:100%; 
+            background:#f1f1f1;  
+            position:absolute;
+            width:100%;
+            top:0;
+            left:0;
+            height: 100%; 
+            text-align:center; 
+            font-size:12px;
+        }
+        .menu ul {
+        }
+        .menu li {
+            display: block;   
+            padding:15px 0 15px 0; 
+            border-bottom:#dddddd 1px solid;
+        }
+        .menu li:hover{
+            display: block;    
+            background:#ffffff; 
+            padding:15px 0 15px 0; 
+            border-bottom:#dddddd 1px solid;
+        }
+        .menu ul li a { 
+            text-decoration:none;  
+            margin: 0px; 
+            color:#666;
+        }
+        .menu ul li a:hover {  
+            color: #666; 
+            text-decoration:none;
+            }
+        .menu a{
+            text-decoration:none; 
+            color:#666;
+        }
+        .menu a:hover{
+            text-decoration:none; 
+            color:#666;
+        }
+        }
+    }
+}
+
+@media only screen and (min-width: 767px)  {
+.home{
+    .right-nav{
+        button{
+            display: none;
         }
     }
 }

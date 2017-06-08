@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require("gulp-autoprefixer");
 var browserSync = require('browser-sync');
+var cleanCSS = require('gulp-clean-css');
 // var sourcemaps   = require('gulp-sourcemaps');
 // var reload = browserSync.create();
 // var uglify = require('gulp-uglify');
@@ -12,9 +13,14 @@ var browserSync = require('browser-sync');
 //gets the source and passes it to it's destination
 
 gulp.task('sass', function(){
-    return gulp.src('scss/**/*.scss')
+    return gulp.src('scss/style.scss')
     .pipe(sass())
-    .pipe(autoprefixer())
+    .pipe(autoprefixer(
+        {
+             browsers: ['last 2 versions'],
+        }
+    ))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
         stream: true
