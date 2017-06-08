@@ -146,27 +146,29 @@
     }
     .container{
         margin: 70px 0;
-    }
-
-    .column{
         justify-content: space-between;
-        width: 32%;
-        background-color: #fff;
-    
-        img{
-            @extend .img;
-            height: 250px;
+
+        .details{
+            margin: 0 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        
+            img{
+                @extend .img;
+            }
         }
     }
     .article-desc{
-        @extend .flex-column;               
-        padding: 15px 25px;
+        @extend .flex-column;        
+        padding: 20px;
 
         h3{
             @extend .custom-text4;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 15px;
-            transition: .3s ease-in-out
+            transition: .3s ease-in-out;
+            height: 90px;
         }
         p{
             @extend .descriptions;
@@ -298,6 +300,10 @@
         padding: 1.5% 5%;
         margin: 40px 0;
      }
+     button:hover{
+        cursor: pointer;
+        background-color: $desColor;
+     }
  }
 .news{
     @extend .sec-padding;
@@ -317,22 +323,21 @@
         top: 60px;  
     }
     .container{
-        margin: 70px 0;
-    }
-
-    .column{
-        justify-content: flex-start;
-        width: 32%;
-        background-color: #fff;
+        margin: 70px auto;
     
-        img{
-            @extend .img;
-            height: 250px;
+        .column{
+            justify-content: flex-start;
+            width: 32%;
+            background-color: #fff;
+        
+            img{
+                @extend .img;
+            }
         }
     }
     .article-desc{
-        @extend .flex-column;               
-        padding: 15px 25px;
+        @extend .flex-column;                   
+        padding: 15px 25px 20px 25px;
         text-align: left;
 
         h3{
@@ -367,16 +372,15 @@
     }
     .container{
         flex-wrap: wrap;
-        margin-top: 50px;
+        margin: 50px 0;
+        justify-content: space-around;
 
         .item{
-            display: inline-block;
+            display: inline;
             overflow: hidden;
-            width: 49.5%;
-            height:350px;
             margin-top: 10px;
             position: relative;
-
+            width: 48%;
         }
         img{
             @extend .img;
@@ -385,8 +389,6 @@
             transition: all 0.2s; 
             vertical-align: middle;
             -webkit-filter: brightness(100%);
-            width: 1200px;
-            height: 800px;
         }
         span{
             color: white;
@@ -559,7 +561,7 @@ footer{
 .home{
     padding: 50px 20px;
    .right-nav{
-       width: 80%;
+       width: 80%;555555555555555
 
        ul{
             justify-content: flex-start;
@@ -582,7 +584,23 @@ footer{
 .cause{
 
     .container{
+        flex-wrap: wrap;
+        flex-direction: row;
         margin: 30px 0;
+        width:100%;
+        height: auto;
+        justify-content: flex-start;
+        .details{
+            flex-wrap: wrap;
+            height: auto;
+            width: 43%;
+            margin: 10px auto;
+        }
+    }
+    .article-desc{
+        h3{
+            height: auto;
+        }
     }
     
 }
@@ -607,7 +625,19 @@ footer{
 .join{
     padding: 20px;
 }
+.news{
+    .container{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
+        .column{
+            width: 45%;
+            margin: 20px auto;
+
+        }
+    }
+}
 footer{
     .column{
         width: 50%;
@@ -641,11 +671,11 @@ footer{
     .container{
         margin: 40px auto auto auto;
         flex-direction: column;
-        width: 70%;
-    }
-    .column{
-        width: 90%;
-        margin: auto auto 20px auto;
+        width:60%;
+        .details{
+            width: auto;
+            margin-bottom: 20px;
+        }
     }
 }
 .vision{
@@ -685,12 +715,12 @@ footer{
 .meet{
     .container{
         flex-wrap: wrap;
-        width: 70%;
+        width: 50%;
         width: auto;
         justify-content: space-around;
     }
     .volunteer{
-        width: 40%;
+        width: 45%;
         margin: 10px auto;
         height: 300px;
         img{
@@ -704,7 +734,7 @@ footer{
         flex-direction: column;
     }
     .column{
-        width: 60%;
+        width: 55%;
         margin: auto auto 20px auto;
     }
 
@@ -714,8 +744,11 @@ footer{
         padding: 0 15px;
         .item{
             margin: 5px auto;  
-            width: 45%;
-            height: 200px;
+            width: 48%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
 }
@@ -761,11 +794,7 @@ footer{
         width: 65%;
     }
     .container{
-        width: 70%;
-        .column{
-            height: 400px;
-            width: 100%;
-        }
+        margin: 40px auto; 
     }
 }
 .meet{
@@ -776,16 +805,12 @@ footer{
 .news{
     padding-bottom: 5px;
     .container{
-        width: 70%;
+        width: 60%;
         margin:auto;
         margin-top: 30px;
+        height: auto;
         .column{
-            -webkit-mask-origin: auto;
-            height: 370px;
             width: 100%;
-        }
-        .article-desc{
-            padding: 15px;
         }
     }
 }
@@ -809,11 +834,6 @@ footer{
             height: auto;
             display: inline;
             padding: 0;
-            
-            img{
-                width: 100%;
-                height: 100%;
-            }
         }
     }
 }
@@ -828,11 +848,13 @@ footer{
     .container{
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 80%;
         img{
-            width: 30%;
+            width: auto;
+            height: auto;
             margin-bottom: 10px;
         }
-    }
+    } 
 }
 footer{
     .column{
@@ -849,9 +871,10 @@ footer{
 }
 @media #{$mobile}{
 .wrapper{
-    margin: 0.5%;
+    margin: 0;
 }
 .home{
+    padding: 20px;
     .left-nav{
         width: 40%;
     }
@@ -866,7 +889,7 @@ footer{
 }
 .meet{
     .volunteer{
-        width: 45%;
+        width: auto;
     }
 }
 .news{
@@ -879,9 +902,30 @@ footer{
         padding: 10px 0;
     }
 }
+.testimonials{
+    .container{
+        width: 100%;
+        .testimonial{
+            padding: 20px 55px;
+        }
+    }
+}
+.logos{
+    .container{
+        width: 100%;
+    }
+}
 footer{
     .column{
-        width: 75%;
+        width: 85%;
+
+        .container:nth-child(2){
+            i{
+                width: 15px;
+                margin: 0 2px;
+                padding: 15px;
+            }
+        }
     }
 }
 }

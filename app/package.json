@@ -21,6 +21,13 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sass": "^3.1.0",
-    "lightbox2": "^2.9.0"
+    "lightbox2": "^2.9.0",
+    "uglify": "^0.1.5"
+  },
+  "devDependencies": {
+    "coffee": "^3.3.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-uglify": "^3.0.0",
+    "uglify": "^0.1.5"
   }
 }
