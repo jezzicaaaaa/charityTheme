@@ -21,7 +21,7 @@ gulp.task('sass', function(){
         stream: true
     }));
 });
-gulp.task('important', function(){
+gulp.task('production', function(){
     return gulp.src('scss/style.scss')
     .pipe(sass())
     .pipe(autoprefixer(
@@ -50,4 +50,3 @@ gulp.task('watch', ['browserSync'], function(){
 });
 
 gulp.task('default', ['sass', 'watch']);
-gulp.task('production', ['important']);
