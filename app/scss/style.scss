@@ -935,20 +935,26 @@ footer{
 .home{
     .right-nav{
         width: 100%;
+        ul li{
+            margin: 0;
+        }
         .big-menu{
             display: none;
+        }
+        button:hover{
+            color: $desColor;
         }
         
         .hamburger{
             background:none;
             position:absolute;
-            top:0;
-            right: 0;
+            top:40px;
+            right: 20px;
             line-height:45px;
             padding:5px 15px 0px 15px;
-            color:#999;
+            color:$peach;
             border:0;
-            font-size:1.4em;
+            font-size:30px;
             font-weight:bold;
             cursor:pointer;
             outline:none;
@@ -957,12 +963,12 @@ footer{
         .cross{
             background:none;
             position:absolute;
-            top:0px;
-            right:0;
+            top:40px;
+            right:20px;
             padding:7px 15px 0px 15px;
-            color:#999;
+            color:$peach;
             border:0;
-            font-size:3em;
+            font-size:30px;
             line-height:65px;
             font-weight:bold;
             cursor:pointer;
@@ -975,43 +981,44 @@ footer{
             width:100%; 
             background:#f1f1f1;  
             position:absolute;
-            width:100%;
             top:0;
             left:0;
-            height: 100%; 
+            height: auto;
             text-align:center; 
             font-size:12px;
         }
         .menu ul {
+            display: block;
+            margin-top: 100px;
+            font-size: 25px;
+            color: $titleColor;
         }
         .menu li {
             display: block;   
-            padding:15px 0 15px 0; 
-            border-bottom:#dddddd 1px solid;
+            padding:15px 0; 
+            border-bottom:#dddddd .5px solid;
         }
         .menu li:hover{
             display: block;    
             background:#ffffff; 
-            padding:15px 0 15px 0; 
-            border-bottom:#dddddd 1px solid;
         }
-        .menu ul li a { 
-            text-decoration:none;  
-            margin: 0px; 
-            color:#666;
-        }
-        .menu ul li a:hover {  
-            color: #666; 
-            text-decoration:none;
-            }
-        .menu a{
-            text-decoration:none; 
-            color:#666;
-        }
-        .menu a:hover{
-            text-decoration:none; 
-            color:#666;
-        }
+        // .menu ul li a { 
+        //     text-decoration:none;  
+        //     margin: 0px; 
+        //     color:#666;
+        // }
+        // .menu ul li a:hover {  
+        //     color: #666; 
+        //     text-decoration:none;
+        //     }
+        // .menu a{
+        //     text-decoration:none; 
+        //     color:#666;
+        // }
+        // .menu a:hover{
+        //     text-decoration:none; 
+        //     color:#666;
+        // }
         }
     }
 }

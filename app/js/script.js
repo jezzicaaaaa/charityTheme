@@ -2,14 +2,14 @@ $( document ).ready(function() {
     $( ".cross" ).hide();
     $( ".menu" ).hide();
     $( ".hamburger" ).click(function() {
-        $( ".menu" ).slideToggle( "slow", function() {
-            $( ".hamburger" ).hide();
+        $( ".hamburger" ).hide();
+        $( ".menu" ).slideToggle( "fast", function() {
             $( ".cross" ).show();
         });
     });
     $( ".cross" ).click(function() {
-        $( ".menu" ).slideToggle( "slow", function() {
-            $( ".cross" ).hide();
+        $( ".cross" ).hide();
+        $( ".menu" ).slideToggle( "fast", function() {
             $( ".hamburger" ).show();
         });
     });
